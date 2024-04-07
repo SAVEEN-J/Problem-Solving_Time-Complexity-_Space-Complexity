@@ -145,7 +145,7 @@ function factorial(n) {
 }
 
 // Example usage:
-console.log(factorial(5)); // Output: 120  5*4*3*2*1*=120
+console.log("factorial",factorial(5)); // Output: 120  5*4*3*2*1*=120
 
 // Time complexity: O(n)
 // Space complexity: O(1)
