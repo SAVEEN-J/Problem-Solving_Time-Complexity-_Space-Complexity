@@ -1,3 +1,4 @@
+// 5  Explain the concept of anagram and write a function to check if two strings are anagrams of each other.
 function areAnagrams(str1, str2) {
     // Clean the strings by removing non-alphabetic characters and converting to lowercase
     const cleanStr1 = str1.replace(/[^a-zA-Z]/g, '').toLowerCase();
