@@ -20,3 +20,19 @@ console.log("factorial",factorial(5)); // Output: 120  5*4*3*2*1*=120
 
 // Time complexity: O(n)
 // Space complexity: O(1)
+
+
+
+function factorial(n) {
+    // Base case: factorial of 0 is 1
+    if (n === 0) {
+        return 1;
+    }
+    // Recursive case: multiply n by factorial of (n-1)
+    else {
+        return n * factorial(n - 1);
+    }
+}
+
+
+console.log(factorial(5)); // Output: 120 (5 * 4 * 3 * 2 * 1)
