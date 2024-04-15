@@ -28,3 +28,83 @@ console.log("Second largest element in an array :",findSecondLargestElement(arra
 
 // Time complexity: O(n)
 // Space complexity: O(1)
+
+
+
+
+
+ 
+// function findSecondLargest(arr) {
+//     if (arr.length < 2) {
+//         return null;  // Return null if the array has less than two elements
+//     }
+    
+//     let largest = arr[0];
+//     let secondLargest = arr[1];
+
+//     // Ensure largest and secondLargest are correctly assigned
+//     if (largest < secondLargest) {
+//         [largest, secondLargest] = [secondLargest, largest];
+//     }
+    
+//     for (let i = 2; i < arr.length; i++) {
+//         if (arr[i] > largest) {
+//             secondLargest = largest;
+//             largest = arr[i];
+//         } else if (arr[i] > secondLargest && arr[i] !== largest) {
+//             secondLargest = arr[i];
+//         }
+//     }
+    
+//     return secondLargest;
+// }
+
+// const array = [5, 9, 3, 17, 2, 8];
+// console.log("Second largest element in the array:", findSecondLargest(array));
+
+
+
+
+// function findSecondLargest(arr) {
+//     if (arr.length < 2) {
+//         return null;  // Return null if the array has less than two elements
+//     }
+    
+//     // Sort the array in descending order
+//     arr.sort((a, b) => b - a);
+    
+//     // The second element after sorting will be the second largest
+//     return arr[1];
+// }
+
+
+// const array = [5, 9, 3, 17, 2, 8];
+// console.log("Second largest element in the array:", findSecondLargest(array));
+
+
+
+
+// function findSecondLargest(arr) {
+//     if (arr.length < 2) {
+//         return null;  // Return null if the array has less than two elements
+//     }
+    
+//     let largest = arr[0];
+//     let secondLargest = -Infinity;
+
+//     for (let i = 1; i < arr.length; i++) {
+//         const current = arr[i];
+//         if (current > largest) {
+//             secondLargest = largest;
+//             largest = current;
+//         } else if (current < largest && current > secondLargest) {
+//             secondLargest = current;
+//         }
+//     }
+    
+//     return secondLargest;
+// }
+
+
+// const array = [5, 9, 3, 17, 2, 8];
+// console.log("Second largest element in the array:", findSecondLargest(array));
