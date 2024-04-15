@@ -1,4 +1,4 @@
-
+// 1 .Explain the Fibonacci series and write a function to generate the first n numbers in the Fibonacci sequence.
 function generateFibonacci(n) {
     if (n <= 0) return [];
     if (n === 1) return [0];
