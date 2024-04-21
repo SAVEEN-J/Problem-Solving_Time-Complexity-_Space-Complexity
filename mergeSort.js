@@ -37,6 +37,5 @@ function merge(leftArr, rightArr) {
     return mergedArr.concat(leftArr.slice(leftIndex)).concat(rightArr.slice(rightIndex));
 }
 
-// Example usage:
 const arr = [64, 34, 25, 12, 22, 11, 90];
 console.log("Sorted array is:", mergeSort(arr));
