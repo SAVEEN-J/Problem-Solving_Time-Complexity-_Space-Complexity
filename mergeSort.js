@@ -39,3 +39,15 @@ function merge(leftArr, rightArr) {
 
 const arr = [64, 34, 25, 12, 22, 11, 90];
 console.log("Sorted array is:", mergeSort(arr));
+
+
+// Merge sort is a popular comparison-based sorting algorithm that follows the divide-and-conquer paradigm. The concept of merge sort involves dividing the input array into smaller subarrays until each subarray contains only one element. Then, it merges these subarrays in a sorted order until only one sorted array remains.
+
+// Here's how the merge sort algorithm works:
+
+// Divide: Split the input array into two halves recursively until each subarray has only one element.
+// Conquer: Merge the smaller sorted subarrays into larger sorted subarrays until the entire array is sorted.
+// The key operation in merge sort is the merging step, where two sorted subarrays are combined to form a single sorted array. This merging process takes advantage of the fact that both subarrays are already sorted.
+
+// Sorted array is: [11, 12, 22, 25, 34, 64, 90]
+// In the mergeSort function, we recursively split the input array into smaller halves until each subarray has only one element. Then, in the merge function, we merge the sorted subarrays back together in sorted order. This process continues until the entire array is sorted.
