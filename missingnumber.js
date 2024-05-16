@@ -1,16 +1,20 @@
-let array = [1, 3, 5, 2, 7];
+let array = [1, 3, 5, 2, 7,10];
 
-function findMissingNumber(arr) {
-    // Calculate the sum of numbers from 1 to the maximum number in the array
-    let n = Math.max(...arr);
-    let sum = (n * (n + 1)) / 2;
+// function findMissingNumbers(arr) {
+    let maxNum = Math.max(...array);
+    // console.log(maxNum);
+    let missingNumbers = [];
 
-    // Subtract the sum of array elements from the sum of the sequence
-    for (let num of arr) {
-        sum -= num;
+    for (let i = 1; i <= maxNum; i++) {
+        if (!array.includes(i)) {
+            missingNumbers.push(i);
+        }
+    
     }
 
-    return sum;
-}
+    // return missingNumbers;
 
-console.log("Missing number:", findMissingNumber(array));
+
+// }
+console.log("Missing numbers:",missingNumbers );
+// console.log("Missing numbers:", findMissingNumbers(array));
