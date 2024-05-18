@@ -9,7 +9,7 @@ function factorial(n) {
     let result = 1;
 //*The loop iterates from 2 to n. Since it goes through each integer exactly once the time complexity of this loop is O(n).
     for (let i = 2; i <= n; i++) {
-        result *= i;
+        result *= i; // result = result * i
     }
 
     return result;
