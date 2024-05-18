@@ -34,11 +34,11 @@ console.log("find Fibonacci nth:",findNthFibonacci(9)); // Output: 34
 
 
 
-// 0: The sequence starts with 0.
-// 1: Then comes 1, which is the next number.
-// 1: To get the third number, you add the two preceding numbers: 0 + 1 = 1.
-// 2: To get the fourth number, add the last two numbers: 1 + 1 = 2.
-// 3: The fifth number is obtained by adding the last two numbers: 1 + 2 = 3.
+// 0: The sequence starts with 0. f(0)
+// 1: Then comes 1, which is the next number. f(1)
+// 1: To get the third number, you add the two preceding numbers: 0 + 1 = 1. f(0)+f(1)=f(2)
+// 2: To get the fourth number, add the last two numbers: 1 + 1 = 2.  f(1)+f(2)=f(3)
+// 3: The fifth number is obtained by adding the last two numbers: 1 + 2 = 3. f(2)+f(3)=f(4)
 // 5: To get the sixth number, add the last two numbers: 2 + 3 = 5.
 // 8: The seventh number is obtained by adding the last two numbers: 3 + 5 = 8.
 // 13: The eighth number is obtained by adding the last two numbers: 5 + 8 = 13.
